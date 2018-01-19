@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apamr.livecricket.Main2Activity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/team"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Choose your team"
+           android:textColor="#000000"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="40dp"/>
+
+       <Spinner
+           android:id="@+id/spinner1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_below="@+id/team"
+           android:layout_marginTop="11dp"
+           android:entries="@array/team_arrays"
+           android:prompt="@string/team_prompt" />
+
+       <EditText
+           android:id="@+id/over"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:hint="Overs"
+           android:layout_marginTop="20dp"
+           android:layout_below="@id/spinner1"/>
+       <TextView
+           android:id="@+id/action"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="Are they:"
+           android:layout_marginLeft="30dp"
+           android:textColor="#000000"
+           android:background="@color/colorPrimary"
+           android:layout_below="@id/over"/>
+
+       <RadioGroup
+           android:id="@+id/rgroup"
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/action">
+           <RadioButton
+               android:id="@+id/rb1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Batting"/>
+           <RadioButton
+               android:id="@+id/rb2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Fielding"/>
+       </RadioGroup>
+      <Spinner
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/team2"
+          android:layout_marginTop="10dp"
+          android:prompt="@string/team_prompt"
+          android:entries="@array/team_arrays">
+      </Spinner>
+
+       <TextView
+           android:id="@+id/team2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Team 2"
+           android:textColor="#000000"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="30dp"
+           android:layout_below="@id/rgroup"/>
+       <Button
+           android:id="@+id/btn1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="100dp"
+           android:layout_marginEnd="136dp"
+           android:layout_marginRight="136dp"
+           android:text="Scoreboard"
+           style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/Base.TextAppearance.AppCompat.Small"
+           android:id="@+id/progSpin"
+           android:progressDrawable="@drawable/circular_progress_bar"
+           android:layout_marginTop="480dp"
+           android:layout_centerHorizontal="true" />
+       
+   </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

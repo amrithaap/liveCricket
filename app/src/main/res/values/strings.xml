@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">liveCricket</string>
+    <string name="team_prompt">Choose a team</string>
+
+    <string-array name="team_arrays">
+        <item>Team A </item>
+        <item>Team B </item>
+        <item>Team C </item>
+        <item>Team D </item>
+    </string-array>
+
+</resources>
